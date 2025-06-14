@@ -69,7 +69,7 @@ export default function BecomeAPartner({ supabase }: { supabase: SupabaseClient 
   return (
     <div className="border-t">
       <div id="become-a-partner" className="max-w-2xl mx-auto space-y-12 py-12 px-6">
-        <h2 className="h2">Become a Partner</h2>
+        <h2 className="h2">Pendaftaran Panitia</h2>
 
         <Form initialValues={INITIAL_VALUES} validate={validate} onSubmit={handleFormSubmit}>
           {({ isSubmitting }: any) => (
@@ -79,13 +79,13 @@ export default function BecomeAPartner({ supabase }: { supabase: SupabaseClient 
                   id="type"
                   name="type"
                   className="font-sans"
-                  label="What type of partner are you?"
+                  label="Organisasi Asal anda"
                   layout="vertical"
                 >
-                  <Select.Option value="expert" selected={true}>
-                    Expert (Agency &amp; Consulting)
+                  <Select.Option value="expert" selected={true}>KSR Markas
                   </Select.Option>
-                  <Select.Option value="technology">Technology</Select.Option>
+                  <Select.Option value="technology">KSR PT unit UNSUR</Select.Option>
+                  <Select.Option value="technology">KSR PT unit UNPI</Select.Option>
                 </Select>
               </div>
 
@@ -95,11 +95,11 @@ export default function BecomeAPartner({ supabase }: { supabase: SupabaseClient 
                   id="first"
                   name="first"
                   layout="vertical"
-                  placeholder="Jane"
+                  placeholder="Fiyuma"
                 />
               </div>
 
-              <div className="h-24">
+              {/* <div className="h-24">
                 <Input
                   label="Last Name *"
                   id="last"
@@ -137,31 +137,31 @@ export default function BecomeAPartner({ supabase }: { supabase: SupabaseClient 
                   layout="vertical"
                   placeholder="CEO"
                 />
-              </div>
+              </div> */}
 
               <div className="h-24">
                 <Input
-                  label="Business email *"
+                  label="Email *"
                   id="email"
                   name="email"
                   layout="vertical"
-                  placeholder="janedoe@example.sg"
+                  placeholder="fiqriyusup@contoh.bang"
                 />
               </div>
 
               <div className="h-24">
                 <Input
-                  label="Phone Number"
+                  label="Nomer Hp"
                   id="phone"
                   name="phone"
                   layout="vertical"
-                  placeholder="+65 1234 1234"
+                  placeholder="+62 577 8778 407"
                 />
               </div>
 
               <div className="h-24">
                 <Select
-                  label="Country / Main Timezone"
+                  label="Divisi"
                   id="country"
                   name="country"
                   layout="vertical"
@@ -176,8 +176,8 @@ export default function BecomeAPartner({ supabase }: { supabase: SupabaseClient 
                 <Input.TextArea
                   id="details"
                   name="details"
-                  label="Additional Details"
-                  placeholder="Tell us about your projects, clients, and technology..."
+                  label="Alamat Tinggal"
+                  placeholder="..."
                   rows={10}
                 />
               </div>
@@ -189,14 +189,14 @@ export default function BecomeAPartner({ supabase }: { supabase: SupabaseClient 
                   loading={isSubmitting}
                   htmlType="submit"
                 >
-                  Send
+                  Kirim
                 </Button>
               </div>
             </div>
           )}
         </Form>
 
-        {formSubmitted && <h3 className="h3">Thanks, we'll reach out to you shortly 👁⚡️👁</h3>}
+        {formSubmitted && <h3 className="h3">Terimakasih Telah Daftar</h3>}
       </div>
     </div>
   )

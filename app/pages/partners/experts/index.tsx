@@ -20,7 +20,7 @@ export async function getStaticProps() {
     props: {
       partners,
     },
-    revalidate: 18000, // In seconds - refresh every 5 hours
+    revalidate: 30, // In seconds - refresh every 5 hours
   }
 }
 
@@ -39,8 +39,8 @@ function ExpertPartnersPage(props: Props) {
       ])
   )
 
-  const meta_title = 'Find an expert'
-  const meta_description = `Find an expert to help build your next idea.`
+  const meta_title = 'Panitia Suport'
+  const meta_description = `Data Panitia Pelantikan PMR se Kabupaten Cianjur 2025`
 
   return (
     <>
@@ -65,9 +65,9 @@ function ExpertPartnersPage(props: Props) {
                     Explore more
                   </div>
                   <PartnerLinkBox
-                    title="Integrations"
+                    title="Panitia Markas"
                     color="blue"
-                    description="Extend and automate your workflow by using integrations for your favorite tools."
+                    description="Data Panitia Markas Pelantikan PMR se Kabupaten Cianjur 2025"
                     href={`/partners/integrations`}
                     icon={
                       <svg
@@ -87,9 +87,9 @@ function ExpertPartnersPage(props: Props) {
                     }
                   />
                   <PartnerLinkBox
-                    title="Become a partner"
+                    title="Daftar Panitia"
                     color="brand"
-                    description="Fill out a quick 30 second form to apply to become a partner"
+                    description="Daftar Panitia Pelantikan PMR 2025"
                     href={`/partners/integrations#become-a-partner`}
                     icon={
                       <svg
@@ -120,7 +120,7 @@ function ExpertPartnersPage(props: Props) {
                     hideCategories={true}
                   />
                 ) : (
-                  <h2 className="h2">No Partners Found</h2>
+                  <h2 className="h2">Tidak Ada data Panitia</h2>
                 )}
               </div>
             </div>

@@ -53,8 +53,8 @@ function IntegrationPartnersPage(props: Props) {
   )
   const router = useRouter()
 
-  const meta_title = 'Find an Integration'
-  const meta_description = `Use your favorite tools with Supabase.`
+  const meta_title = 'Panitia Markas'
+  const meta_description = `Data Panitia Pelantikan PMR se Kabupaten Cianjur 2025`
 
   const [search, setSearch] = useState('')
   const [debouncedSearchTerm] = useDebounce(search, 300)
@@ -158,9 +158,9 @@ function IntegrationPartnersPage(props: Props) {
                   </div>
                   <div className="grid grid-cols-2 gap-8 lg:grid-cols-1">
                     <PartnerLinkBox
-                      title="Experts"
+                      title="Panitia Support"
                       color="blue"
-                      description="Explore our certified Supabase agency experts that build with Supabase"
+                      description="Data Panitia Support Pelantikan PMR se Kabupaten Cianjur 2025"
                       href={`/partners/experts`}
                       icon={
                         <svg
@@ -212,7 +212,7 @@ function IntegrationPartnersPage(props: Props) {
                 {partners.length ? (
                   <PartnerTileGrid partnersByCategory={partnersByCategory} />
                 ) : (
-                  <h2 className="h2">No Partners Found</h2>
+                  <h2 className="h2">Tidak Ada data Panitia</h2>
                 )}
               </div>
             </div>
