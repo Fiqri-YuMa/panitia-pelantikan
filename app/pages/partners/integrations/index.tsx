@@ -182,9 +182,9 @@ function IntegrationPartnersPage(props: Props) {
 
                     <PartnerLinkBox
                       href={`/partners/integrations#become-a-partner`}
-                      title="Become a partner"
+                      title="Daftar Panitia"
                       color="brand"
-                      description="Fill out a quick 30 second form to apply to become a partner"
+                      description="Daftar Menjadi Panitia Pelantikan PMR Kabupaten Cianjur 2025"
                       icon={
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
